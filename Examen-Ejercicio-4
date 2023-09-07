@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+	int I,J=0;
+	
+	printf("Ingrese los digitos a sumar:\n");
+	scanf("%d",&I);
+	printf("\n");
+	
+	while(I>0){
+		J=J + I%10;
+		I= I/10;
+
+	}
+	
+	printf("La suma de todos los numeros es: %d\n",J);
+
+	return 0;
+}
