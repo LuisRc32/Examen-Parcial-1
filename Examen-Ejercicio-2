@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main() {
+	
+	int R=0;
+	printf ("Ingrese el numero a revisar:\n");
+	scanf ("%d",&R);
+	system ("cls");
+	while (R>=0){
+		printf ("Numero ingresado anteriormente: %d\n",R);
+		printf ("EL numero ingresado es positivo.\n");
+		printf ("Ingrese otro numero a revisar:");
+		scanf ("%d",&R);
+		system ("cls");
+	}//Fin de while	
+
+	if (R<0){
+		printf ("Numero ingresado anteriormente: %d\n",R);
+		printf ("EL numero ingresado es negativo.\n");
+	}//Fin del segundo else
+	
+	printf ("\n\n-------FIN DEL PROGRAMA-------\n");
+	return 0;
+}
