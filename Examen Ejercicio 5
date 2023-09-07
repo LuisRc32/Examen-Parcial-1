@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+	int E,Im=0,Co=0,H=0,F;
+	
+	printf("Ingrese el limite de la lista de enteros:\n");
+	scanf ("%d",&E);
+	
+	while(H<=E){
+		printf("Ingrese el numero:\n");
+		scanf ("%d",F);
+		
+		if(F%2==0){
+			Co=Co+1;
+		}else{
+			Im=Im+1;
+		}
+		H=H+1;
+	}
+	
+	printf("La Cantidad de numeros impares son: %d\n",Im);
+	return 0;
+}
