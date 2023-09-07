@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+	int X,Y=1,Z;
+	printf("Ingrese la tabla de multiplicar a revisar:\n");
+	scanf("%d",&X);
+	Z=X;
+	printf ("\nEsta es la tabla que eligio:\n");
+	
+	while (Y<=10 && Y>0){
+		printf ("%dx%d=%d \n",X,Y,Z);
+		Y=Y+1;
+		Z=X*Y;
+	}//Fin de while
+	
+	printf ("\n\n-------FIN DEL PROGRAMA-------\n");
+	return 0;
+}
